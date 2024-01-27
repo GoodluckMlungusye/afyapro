@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfyaPro Intelligent Hospital System</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+
+        .mobile-container{
+
+          margin-top: 3%;
+          background: #022441;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+
+        .anime-txt{
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .mobile-part{
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .mobile-info{
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          padding: 3.5em;
+          width: 45%;
+
+        }
+
+        .mobile-info .more-btn {
+          display: inline-block;
+          background: rgba(255, 255, 255, 0.2);
+          padding: 6px 30px 8px 30px;
+          color: #fff;
+          border-radius: 50px;
+          transition: all ease-in-out 0.4s;
+          margin-top: 9px;
+        }
+        
+        .mobile-info .more-btn i {
+          font-size: 14px;
+        }
+
+        
+ .mobile-info .more-btn:hover {
+  color: #022441;
+  background: #e66612;
+  letter-spacing: 3px;
+ }
+
+        .mobile-img{
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30%;
+          
+        }
+
+
+        .anime-txt span{
+            
+            display: block;
+        }
+
+        .text1{
+
+            margin-top: 30px;
+            color: #e66612;
+            font-size: 70px;
+            font-weight: 500;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            background: #022441;
+            position: relative;
+            animation: text 3s 1;
+          }
+
+
+        .text2{
+            text-transform: lowercase; 
+            font-size: 50px;
+            color: #e66612;
+          }
+
+          
+          @keyframes text {
+            0%{
+              color: white;
+              margin-bottom: -60px;
+            }
+            30%{
+              letter-spacing: 30px;
+              margin-bottom: -60px;
+            }
+            85%{
+              letter-spacing: 10px;
+              margin-bottom: -60px;
+            }
+          }
+
+        
+
+          #m-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+          }
+
+
+         
+
+
+
+          .p-container{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+
+          .mobile-ui{
+            width: 50%;
+            padding: 0 9em;
+          }
+
+          #downloadinfo{
+          
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            
+          }
+  
+          #downloadinfo button{
+            background: #022441;
+            color: #fff;
+            border-radius: 30px;
+            padding: 8px 25px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 14px;
+            display: inline-block;
+            border: none;
+          }
+          
+          #downloadinfo button:hover {
+            background: #e66612;
+            color: #fff;
+            letter-spacing: 2px;
+          }
+
+          #downloadinfo a img {
+            width: 35px;
+            height: 35px;
+          }
+
+       
+
+        .testimonials .testimonial-item .testimonial-img {
+            width: 90px;
+            border-radius: 10px;
+            border: 6px solid #fff;
+            position: absolute;
+            
+          }
+
+         .why-container{
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 30px;
+
+          }
+
+          .why-box{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #d5e1ed;
+            padding: 80px 20px;
+            transition: all ease-in-out 0.3s;
+            margin: 8px;
+            
+          }
+
+          
+          .why-box:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+          }
+
+          .why-box h5 img{
+
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+          }
+
+          @media (max-width:  1300px) {
+
+
+          .mobile-ui{
+         
+            padding: 0 5em;
+           
+          }
+
+
+          }
+
+          
+          @media (max-width: 1185px) {
+
+
+            .mobile-ui{
+           
+              padding: 0 0;
+             
+            }
+  
+  
+            }
+
+
+
+                 
+          @media (max-width: 1015px) {
+
+         
+            .why-container{
+
+              flex-direction: column;
+            }
+           
+            .why-box{
+
+              width: 70%;
+            }
+
+             
+            }
+         
+  
+
+
+            
+
+
+
+            @media (max-width: 1000px) {
+
+
+              #downloadinfo{
+          
+                margin-left: 30px;
+                
+              }
+    
+    
+              }
+          
+          
+        
+
+
+           
+          @media (max-width: 991px) {
+
+            .mobile-part{
+
+              flex-direction: column;
+            }
+
+
+            
+        .mobile-info{
+
+          width: 90%;
+
+        }
+
+        .mobile-img{
+
+          
+          width: 60%;
+          margin-bottom: 50px;
+          
+        }
+
+
+        .p-container{
+
+          flex-direction: column;
+        }
+
+        .mobile-ui{
+          width: 30%;
+          height: 30%;
+          margin-left: -25%;
+      
+        }
+
+        #downloadinfo{
+
+          margin-top: 50px;
+          width: 50%;
+         
+          
+        }
+
+
+
+    }
+
+
+    @media (max-width:710px) {
+
+      .mobile-ui{
+        width: 20%;
+        height:20%;
+        
+    
+      }
+
+      .mobile-ui img{
+
+        width: 250%;
+        height: 250%;
+
+      }
+
+      
+      #downloadinfo button{
+        
+        padding: 6px 20px;
+        font-size: 10px;
+     
+      }
+      
+
+    
+
+    }
+        
+           
+    @media (max-width: 545px) {
+
+     
+      .why-box{
+
+        width:  100%;
+      }
+
+       
+      }
+
+
+
+    @media (max-width: 500px) {
+
+      .text1{
+
+        font-size: 60px;
+        font-weight: 450;
+        letter-spacing: 10px;
+    
+      }
+
+
+    .text2{
+     
+        font-size: 40px;
+        
+      }
+
+      .mobile-img{
+
+          
+        width: 80%;
+        
+        
+      }
+
+      .mobile-ui img{
+
+        width: 350%;
+        height: 350%;
+        margin-left: -50%;
+
+      }
+
+      
+      #downloadinfo button{
+        
+        padding: 5px  10px;
+      
+     
+      }
+
+      #downloadinfo{
+
+        width: 80%;
+       
+        
+      }
+
+      #downloadinfo a img {
+
+
+        width: 25px;
+        height: 25px;
+        
+      }
+
+
+    }
+
+
+
+    @media (max-width: 430px) {
+
+      .text1{
+
+        font-size: 50px;
+        font-weight: 300;
+        letter-spacing: 5px;
+    
+      }
+
+
+    .text2{
+     
+        font-size: 30px;
+        
+      }
+
+
+    }
+
+
+    
+    @media (max-width: 400px) {
+
+      .mobile-info p span{
+    
+        display: none;
+    
+      }
+
+
+                 
+   
+      .why-box h5 span{
+
+        display: none;
+      }
+
+
+
+
+    }
+
+  
+    @media (max-width: 380px) {
+
+      .text1{
+
+        font-size: 40px;
+       
+    
+      }
+
+      .text2{
+     
+        font-size: 25px;
+        
+      }
+
+    }
+
+    </style>
+
+
+</head>
+<body>
+    
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:rachel.mshomi@afyapro.net">development@afyapro.net</a>
+        <i class="bi bi-phone"></i> 0222771579
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="http://www.twitter.com" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="http://www.facebook.com" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="http://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="http://www.linkedin.com" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+          <img src="assets/img/logo.png" class="logo me-auto" id="afyalogo">
+       
+         
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">HOME</a></li>
+              <li><a class="nav-link scrollto" href="index.html#departments">SOLUTIONS</a></li>
+              <li><a class="nav-link scrollto" href="about.html">ABOUT US</a></li>
+              <li><a class="nav-link scrollto active" href="references.html">REFERENCES</a></li>
+              <li><a class="nav-link scrollto" href="#mobile">MOBILE</a></li>
+              <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+          <a href="index.html#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Request a</span> demo</a>
+    
+        </div>
+      </header><!-- End Header --> 
+
+
+       <!-- ======= Mobile Section I ======= -->
+<section id="mobile" class="appointment section-bg" >
+
+<div  class="mobile-container" id="container">
+
+    <div class="anime-txt">
+      <span class="text1">AFYAPRO</span>
+      <span class="text2">mobile services</span>
+    </div>
+
+    <div class="mobile-part">
+              
+      <div class="mobile-info">
+          <h2>AfyaPro – Hospital and Clinic Management System</h2>
+          <p>Renovate your Hospital & Clinic into Digital System with 
+                AfyaPro App, a Clinic Management Mobile App. This is how we make your old system smart and faster. 
+                Be the change, take step towards the Digital world, and update 
+                your hospital/clinic. <span>Let’s Digitalize your Hospital / Clinic through AfyaPro mobile app. It's a complete Digitalization Solutions for all type of Clinic and Hospital. 
+                  Be the first to Upgrade your Systems and simplify the health services.</span> 
+                
+               
+          </p>
+          <a class=" nav-link scrollto  more-btn" href="#why-info">More <i class="bx bx-chevron-right"></i> </a>
+                
+      </div>
+
+      <div class="mobile-img"> 
+        
+        <img src="assets/img/phone3.jpg"  id="m-img"> 
+      
+      </div>
+
+    </div>
+
+</div>
+
+
+</section><!-- End Mobile Section I -->
+     
+
+
+
+        <!-- =======Mobile Section II ======= -->
+       <section id="download" class="appointment section-bg" >
+        <div class="p-container" id="container">
+          <div class="mobile-ui" >
+            <img src="assets/img/welcome.png" >
+
+          </div>
+        
+           <div id="downloadinfo">
+               <h2>Download Our App From Store</h2>
+               <p>Be the change, take step towards the Digital world update your hospital/clinic.
+                  Just download the application from the App Store. Download Now.
+               </p>
+               <a href="https://play.google.com/store/apps/details?id=com.vitalhealthsoftware.afyapro&hl=en&gl=US"> <button ><img src="assets/img/playstore.png"> &nbsp;FROM PLAYSTORE</button></a>
+           </div>
+
+        </div>
+      </section><!-- End Mobile Section II -->
+
+
+
+          <!-- ======= screen shot Section ======= -->
+
+          
+  
+          <div class="section-title">
+            <h2>Screenshots</h2>
+          </div>
+  
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+  
+          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              
+  
+
+              <div class="swiper-slide">
+                <img src="assets/img/mobileApp.png" class="testimonial-img">
+              </div><!-- End screen shot item -->
+
+              
+              <div class="swiper-slide">
+                <img src="assets/img/hospital.png" class="testimonial-img"  >
+          </div><!-- End screen shot item -->
+  
+
+              <div class="swiper-slide">
+                    <img src="assets/img/doctor.png" class="testimonial-img" >
+              </div><!-- End screen shot item -->
+
+              <div class="swiper-slide">
+               
+            
+                <img src="assets/img/details.png" class="testimonial-img"  >
+          </div><!-- End screen shot item -->
+
+
+          <div class="swiper-slide">
+               
+            
+            <img src="assets/img/time.png" class="testimonial-img"  >
+      </div><!-- End screen shot item -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End screen shot Section -->
+
+
+
+
+
+         
+      <div class="section-title" id="why-info">
+        <h2>Why us over others?</h2>
+        <p>We have integrated our complete Hospital Management System with simple UI interface application
+            which enables patients to request for services and reduce the time of paper that old system take.
+        </p>
+      </div>
+
+         <!-- ======= Requesting Section ======= -->
+         <section id="why" class="appointment section-bg" >
+            <div class="why-container" id="container">
+
+
+
+               <div class="why-box">
+
+                <h5> <img src="assets/img/appointmentvcon.png">Appointment <span> Management </span> </h5>
+
+                <div class="why-box-p">
+
+                  <p>
+                    With AfyaPro App you can easy book an appointment just with your phone and avoid long queue. You will get the list of appointment time.
+                    Just select the time and you are good to go. </p>
+                      
+                </div>
+               
+               </div>
+
+
+               <div class="why-box">
+                 
+                <h5>  <img src="assets/img/prescription.png" >Prescription <span> Management </span> </h5>
+
+                <div class="why-box-p">
+
+                  <p>We don't need bunch of paper for doctor prescription.
+                    Our Management App features a special module for prescription, though this you can easily get your all prescription 
+                    details along with the date of visits. </p>
+                </div>
+                       
+                   
+            </div>
+            
+
+
+            <div class="why-box">
+                 
+                <h5>  <img src="assets/img/reception.png" >Reception  <span> Management </span></h5>
+
+                <div class="why-box-p">
+
+                  <p>Our all work is done with a single mobile application that make it easy for receptionist 
+                    to manage appointment and payment.
+                    With real-time status update it will be easy to identify the daily appointments details. </p>
+                </div>
+       
+                   
+            </div>
+
+
+            <div class="why-box">
+                 
+                <h5> <img src="assets/img/pay.png" >Payment  <span> Management </span></h5>
+
+                <div class="why-box-p">
+
+                  <p>For easy and efficient payments, 
+                    our Hospital Management Application provides payment management as per the patient about the pending 
+                    bill and method of payment done with date. </p>
+
+                </div>
+              
+                   
+            </div>
+
+    
+            </div>
+          </section><!-- End Requesting Section -->
+
+
+     
+     <!-- ======= Contact Section ======= -->
+     <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Feel free to reach us via our contacts.</p>
+        </div>
+      </div>
+
+      <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0497672622114!2d39.25565241486418!3d-6.763786695110769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4d86acc3e425%3A0xcc6f5983f729790f!2sNPK%20Technologies%20Ltd.!5e0!3m2!1sen!2stz!4v1627464646460!5m2!1sen!2stz" width="1515" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top" style="color: white; background: black;">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AfyaPro</h3>
+          <p>
+            <strong>Adress:</strong>  <br>
+            Tanzania <br>
+            1st Floor, The Arcade Building, Old Bagamoyo Road, Dar es Salaam
+             <br><br>
+            <strong>Phone:</strong> +255 22 292 6415, +255 22 292 6416 <br>
+            <strong>Email:</strong>development@afyapro.net<br> <br>
+            <strong>The Netherlands</strong> <br>
+            Mulderslaan 17 3905 GA Veenendaal <br>
+            +31 318 589 461 
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="index.html#departments">Solutions</a></li>
+              <li><a class="nav-link scrollto" href="about.html">About us</a></li>
+              <li><a class="nav-link scrollto" href="references.html">References</a></li>
+              <li><a class="nav-link scrollto" href="#">Mobile</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Solutions</h4>
+          <ul>
+            <a class="nav-link scrollto" href="index.html#departments"><li><i class="bx bx-chevron-right"></i>Patient Mobile App</li></a>
+            <a class="nav-link scrollto" href="index.html#departments"><li><i class="bx bx-chevron-right"></i>Intelligent Hospital Solution</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>AfyaPro</span></strong>. All Rights Reserved
+      </div>
+    </div> 
+   
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="http://www.twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="http://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="http://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="http://www.skype.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="http://www.linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+
+   
+  </div>
+</footer><!-- End Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  </main>
+    
+</body>
+</html>
