@@ -1,9 +1,3 @@
-/**
-* Template Name: Medilab - v4.3.0
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -499,36 +493,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
 }
 
-
-
-.header{
-
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.637);
-  padding: 2em 4em;
-  border-radius: 4px;
-  margin-left: -5%;
-
-  
-
-}
-
-
 .slider{
   width: 100%;
-  height: 500px;
-  overflow: hidden;
- 
-  
+  overflow: hidden; 
 }
-
-
 
 .slides{
   width: 500%;
-  height: 100%;
   display: flex;
- 
 }
 
 .slides input{
@@ -543,51 +515,27 @@ h1, h2, h3, h4, h5, h6 {
 .slide img{
   width: 100%;
   height: 120%;
-  
- 
- 
 }
-
-
-
-
-
-
-@media (max-width:  1300px) {
-  .header{
-
-   margin-left: -8%;
-  
-  }
-}
-
-
 
 
 @media (max-width: 1200px) {
   #hero h1 {
-
     font-size: 35px;
     font-weight: 650;
-    
   }
   
   #hero .btn-get-started {
-
     font-weight: 400;
     font-size: 13px;
     padding: 10px 30px;
     margin-left: 35%;
-    
   }
+}
 
-
-  .header{
-
-    margin-left:  -2%;
-   
-   }
-  
+@media (max-width: 1190px) {
+  .slider{
+    margin-top: -100px;
+  }
 }
 
 
@@ -599,6 +547,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+
+  .why-us{
+    margin-top: -40%;
+  }
+
+  .slider{
+    margin-top: -300px;
+  }
+
   #hero {
     margin-bottom: 0;
     height: 100vh;
@@ -615,85 +572,54 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     margin-bottom: 30px;
   }
- 
-    
 }
-
-@media (max-width:  880px) {
-  .header{
-
-   display: none;
-  
-  }
-}
-
 
 @media (max-width:  830px) {
 
-  .slider{
-   
-    height: 300px;
-    margin-top: -22%;
-     
-  }
-  
-  
-  
-  .slides{
-
-    height: 80%;
-  
-   
+  .why-us{
+    margin-top: -70%;
   }
 
-  
+
   .slide{
     width: 20%;
     transition: 2s;
   }
   
-
   .slide img{
     width: 100%;
     height:150%;
-    
   }
-  
-  
-}
-
-
-@media (max-width:  700px) {
- 
 
   .slider{
-   
-
-    margin-top: -30%;
-     
+    margin-top: -400px;
   }
-  
 }
 
+@media (max-width: 630px) {
+
+  .why-us{
+    margin-top: -100%;
+  }
+
+
+  .slider {
+    margin-top: -500px;
+  }
+}
 
 @media (max-height: 600px) {
   #hero {
     height: 110vh;
   }
-  
 }
 
 
-@media (max-width: 540px) {
-  
+@media (max-width: 575px) {
 
-  .slider{
-   
-
-    margin-top: -40%;
-     
+  .why-us{
+    margin-top: -45rem;
   }
-
 }
 
 @media (max-width: 520px) {
@@ -701,28 +627,28 @@ h1, h2, h3, h4, h5, h6 {
   .slide img{
     width: 100%;
     height:100%;
-    
   }
-  
+}
+
+@media (max-width: 450px) {
+  .slider {
+    margin-top: -600px;
+  }
 }
 
 
-@media (max-width: 360px) {
-  
-
-  .slider{
-   
-
-    margin-top: -55%;
-     
+@media (max-width: 300px) {
+  .slider {
+    margin-top: -700px;
   }
-
+  
+  .why-us{
+    margin-top: -50rem;
+  }
 }
-
 
 
 /*css for manual slide navigation*/
-
 
 .navigation-manual{
   position: absolute;
@@ -978,70 +904,6 @@ section {
   font-size: 15px;
   color: #848484;
 }
-
-
-@media (max-width:  830px) {
-
-  .why-us{
-   margin-top: -30%;
- }
-
-
-}
-
-
-
-@media (max-width:  700px) {
-
-  .why-us{
-   margin-top: -40%;
- }
-
-
-}
-
-@media (max-width:  520px) {
-
-  .why-us{
-   margin-top: -55%;
- }
-
-
-}
-
-
-@media (max-width:  480px) {
-
-  .why-us{
-   margin-top: -65%;
- }
-
-
-}
-
-
-@media (max-width: 420px) {
-
-  .why-us{
-   margin-top: -75%;
- }
-
-
-
-}
-
-
-
-
-@media (max-width: 370px) {
-
-  .why-us{
-   margin-top: -100%;
- }
-
-
-}
-
 
 
 
@@ -1784,6 +1646,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.map{
+  width: 100%;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -2095,28 +1962,7 @@ section {
 
 }
 
- /* Header class */
- .header{
-  position: absolute;
-  left: 25vw;
-  margin-top: 25vh;
-  background-color: rgba(0, 0, 0, 0.637);
-  padding: 2em 4em;
-  border-radius: 4px;
-}
-
-
 #afyalogo{
   max-height:40px; 
   max-width:300px; 
 }
-
-
-
-
-
-
-
-
-
-
